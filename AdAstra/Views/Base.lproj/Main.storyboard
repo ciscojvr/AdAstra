@@ -48,16 +48,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="124.5" height="163.5"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <state key="normal" title="Yesterday"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jv-lY-aH6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-c5-RyC">
                                                 <rect key="frame" x="144.5" y="0.0" width="125" height="163.5"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <state key="normal" title="Today"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtY-B4-Xx4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-d9-45y">
                                                 <rect key="frame" x="289.5" y="0.0" width="124.5" height="163.5"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <state key="normal" title="Tomorrow"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRq-B2-0aL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -73,6 +82,11 @@
                             <constraint firstItem="q4V-nY-G0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zRt-68-XNv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageDescription" destination="a06-MG-H19" id="Tkv-QC-dDr"/>
+                        <outlet property="imageTitle" destination="ZSN-D0-3QR" id="6HU-Vi-WvF"/>
+                        <outlet property="imageView" destination="Qws-un-w4n" id="KKP-Af-6jK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
