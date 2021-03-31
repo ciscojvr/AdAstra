@@ -16,36 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-nY-G0J">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q4V-nY-G0J">
+                                <rect key="frame" x="10" y="44" width="394" height="818"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-04-fIF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Photo of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAf-04-fIF">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gbC-e8-MDf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andromeda Galaxy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-D0-3QR">
-                                        <rect key="frame" x="0.0" y="163.5" width="414" height="163.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andromeda Galaxy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-D0-3QR">
+                                        <rect key="frame" x="0.0" y="70" width="394" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="andromeda" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-un-w4n">
-                                        <rect key="frame" x="0.0" y="327" width="414" height="164"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="andromeda" translatesAutoresizingMaskIntoConstraints="NO" id="Qws-un-w4n">
+                                        <rect key="frame" x="0.0" y="110" width="394" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="o90-81-93s"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a06-MG-H19">
-                                        <rect key="frame" x="0.0" y="491" width="414" height="163.5"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLO-zD-g7e">
+                                        <rect key="frame" x="0.0" y="520" width="394" height="258"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">The Andromeda Galaxy, also known as Messier 31, M31, or NGC 224 and originally the Andromeda Nebula, is a barred spiral galaxy approximately 2.5 million light-years from Earth and the nearest major galaxy to the Milky Way</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iBX-ZA-8R4">
-                                        <rect key="frame" x="0.0" y="654.5" width="414" height="163.5"/>
+                                        <rect key="frame" x="0.0" y="788" width="394" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-Oe-LRb">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="163.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="30"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <state key="normal" title="Yesterday"/>
                                                 <connections>
@@ -53,19 +60,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seY-c5-RyC">
-                                                <rect key="frame" x="144.5" y="0.0" width="125" height="163.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="187" height="30"/>
                                                 <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                                                 <state key="normal" title="Today"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GtY-B4-Xx4"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc6-d9-45y">
-                                                <rect key="frame" x="289.5" y="0.0" width="124.5" height="163.5"/>
-                                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
-                                                <state key="normal" title="Tomorrow"/>
-                                                <connections>
-                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRq-B2-0aL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -78,12 +77,12 @@
                         <constraints>
                             <constraint firstItem="q4V-nY-G0J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="A3t-qr-ZVQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q4V-nY-G0J" secondAttribute="bottom" id="BV1-r5-E9v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4V-nY-G0J" secondAttribute="trailing" id="S0t-sr-NmP"/>
-                            <constraint firstItem="q4V-nY-G0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zRt-68-XNv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q4V-nY-G0J" secondAttribute="trailing" constant="10" id="S0t-sr-NmP"/>
+                            <constraint firstItem="q4V-nY-G0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zRt-68-XNv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageDescription" destination="a06-MG-H19" id="Tkv-QC-dDr"/>
+                        <outlet property="imageDescription" destination="aLO-zD-g7e" id="H9M-AW-iVa"/>
                         <outlet property="imageTitle" destination="ZSN-D0-3QR" id="6HU-Vi-WvF"/>
                         <outlet property="imageView" destination="Qws-un-w4n" id="KKP-Af-6jK"/>
                     </connections>
