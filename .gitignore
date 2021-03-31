@@ -1,0 +1,2 @@
+# Ignore keys.plist file which contains private API Key
+keys.plist
